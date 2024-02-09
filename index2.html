@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+          font-family: 'Courier New', Courier, monospace;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          
+          header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+          }
+          
+          header h1 {
+            margin: 0;
+          }
+          
+          header p {
+            margin: 0;
+          }
+          
+          nav {
+            background-color: #444;
+            padding: 10px;
+          }
+          
+          nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          nav li {
+            display: inline;
+            margin-right: 10px;
+          }
+          
+          nav a {
+            color: white;
+            text-decoration: none;
+          }
+          
+          nav a:hover {
+            color: #ccc;
+          }
+          
+          main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+          }
+          
+          main h2 {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+          }
+          
+          main ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          
+          main li {
+            flex-basis: calc(33.333% - 20px);
+            margin-bottom: 20px;
+            margin-right: 20px;
+          }
+          
+          main img {
+            width: 100%;
+          }
+          
+          @media (max-width: 992px) {
+            main li {
+            }
+          }
+          
+          @media (max-width: 768px) {
+            main li {
+              flex-basis: 100%;
+            }
+          }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>John Kendric</h1>
+      <p>And I'm a Frontend Developer</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nulla sed soepe nerum, animi expedita.</p>
+      <a href="CV.pdf" download>Download CV</a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="home">
+        <img src="profile-image.jpg" alt="John Kendric profile image" />
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, repellat. Reprehenderit, fugiat! A, incidunt quisquam soluta tempora quae facere iure id nihil porro illo quos dignissimos repellat, laudantium molestiae.</p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <h3>Frontend Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, temporibus!</p>
+          </li>
+          <li>
+            <h3>User Interface Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, temporibus!</p>
+          </li>
+          <li>
+            <h3>Web Accessibility</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, temporibus!</p>
+          </li>
+        </ul>
+      </section>
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <ul>
+          <li>
+            <a href="project1.html">
+              <h3>Project 1</h3>
+              <img src="project1-screenshot.jpg" alt="Project 1 screenshot" />
+            </a>
+          </li>
+          <li>
+            <a href="project2.html">
+              <h3>Project 2</h3>
+              <img src="project2-screenshot.jpg" alt="Project 2 screenshot" />
+            </a>
+          </li>
+          <li>
+            <a href="project3.html">
+              <h3>Project 3</h3>
+              <img src="project3-screenshot.jpg" alt="Project 3 screenshot" />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at john.kendric@example.com or call me at (123) 456-7890.</p>
+      </section>
+    </main>
+  </body>
+</html>
